@@ -1,16 +1,13 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
 function Display(props) {
-    // const [display,setDisplay] = useState(0);
-
-    return (
-        <section className="display">
-            This is the Display for the Counter.
-        </section>
-    )
-
-
+  return (
+    <div>
+      <p className="message">
+        Your total is <span className="message-amount">{props.count}</span>
+      </p>
+    </div>
+  );
 }
 
 export default Display;
-
